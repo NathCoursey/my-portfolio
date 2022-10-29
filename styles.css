@@ -8,7 +8,7 @@ section {
 }
 
 .hero {
-    background-color: #192236;
+    background-image: url("https://i.imgur.com/H9DxATG.png");
     height: 100vh;
     color: white;
     font-size: 40px;
@@ -23,7 +23,9 @@ footer {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-inline: 40px;
 }
 
 ul {
@@ -42,6 +44,28 @@ h1 {
     font-size: 90px;
     margin: 0;
 }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cute-img {
+    height: auto;
+    width: 300px;
+    padding-top: 200px;
+    padding-right: 20px;
+    transform: translateY(-10%);
+  animation: move 1.4s infinite ease-in-out alternate;
+}
+@keyframes move {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+  }
 
 h2 {
     font-size: 50px;
@@ -83,7 +107,8 @@ p {
 }
 
 .button:hover {
-    background-color: #FFB6C1;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .button:active {
@@ -93,12 +118,9 @@ p {
 
 .socials {
     padding-bottom: 200px;
+    margin-right: 10px;
 }
 
-.logo {
-    height: 80px;
-    margin: 30px;
-}
 .social {
     margin: 20px;
 }
@@ -117,9 +139,10 @@ p {
 }
 
 .headshot {
-    width: 300px;
-    border-radius: 150px;
-    margin-left: 80px;
+   height: auto;
+   width: 1500px;
+   border-radius: 100%;
+   margin-right: 100px;
 }
 
 .headshot-container {
@@ -127,10 +150,14 @@ p {
     align-items: center;
 }
 
+.skill-title {
+    text-align: center;
+}
+
 .skills-section {
     display: flex;
-    justify-content: space-around;
-    padding: 80px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .skills-container {
