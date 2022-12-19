@@ -19,6 +19,7 @@ section {
     font-size: 40px;
 }
 
+
 footer {
     background-color: #252525;
     color: white;
@@ -30,7 +31,9 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin-inline: 40px;
+    padding-inline-end: 30px;
+    background-color: rgba(23, 21, 28, 0.5);
+    ;
 }
 
 ul {
@@ -77,8 +80,8 @@ h2 {
 }
 
 p {
-    margin: 0;
-    font-size: 30px;
+    margin-right: 20px;
+    font-size: 25px;
     font-weight: 300;
 }
 
@@ -154,7 +157,7 @@ p {
 
 .headshot {
    height: auto;
-   width: 1500px;
+   width: 3000px;
    border-radius: 100%;
    margin-right: 100px;
 }
@@ -171,13 +174,31 @@ p {
 .skills-section {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
 }
 
 .skills-container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:20px;
 }
+
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+    border-radius: 20px;
+  }
+  
+  .skills {
+    text-align: right; /* Right-align text */
+    color: white; /* White text color */;
+  }
+  
+  .html {width: 95%; background-color: #492A46; border-radius: 20px;} 
+  .css {width: 95%; background-color: #492A46; border-radius: 20px;} 
+  .js {width: 85%; background-color: #492A46; border-radius: 20px;} 
+  .react {width: 80%; background-color: #492A46; border-radius: 20px;}
 
 .project-card {
     width: 300px;
