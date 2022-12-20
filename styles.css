@@ -14,6 +14,12 @@ section {
 
 .hero {
     background-image: url("https://i.imgur.com/H9DxATG.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
     height: 100vh;
     color: white;
     font-size: 40px;
@@ -24,7 +30,7 @@ footer {
     background-color: #252525;
     color: white;
     text-align: center;
-    padding: 80px;
+    padding: 20px;
 }
 
 nav {
@@ -253,10 +259,9 @@ a {
 }
 
 
-@media only screen and (max-width: 1000px) {
+ @media only screen and (max-width: 1000px) {
     .hamburger {
         display: block;
-        border: 0;
         background-color: transparent;
         color: white;
         font-size: 30px;
@@ -267,17 +272,86 @@ a {
     ul {
         display: none;
         background-color: #2b2c38;
-        margin: 0ppx;
+        margin: 0px;
     }
 
     ul.show {
         display: block;
     }
 
-    nav {
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: #2b2c38;
+    
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    section,
+    body {
+        width: auto;
+        height: auto;
+        display: block;
+        text-align: center;
     }
 
-}
+    .hero {
+        /* background-image: url("https://i.imgur.com/H9DxATG.png"); */
+       width: auto;
+       height: auto;
+       padding-top: 40px;
+    }
+
+    .hero-text {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero-area {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .cute-img {
+        display: none;
+    }
+
+    .sub-section {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .sub-section-alternative {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .headshot {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .socials {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-top: 50px;
+    }
+
+    #social {
+        padding-inline: 10px;
+        }
+
+        footer {
+            width: auto;
+            height: auto;
+            text-align: center;
+        }
+
+        .mail {
+            width: auto;
+            height: auto;
+  }
+        
+  }
