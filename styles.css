@@ -319,9 +319,7 @@ a {
     }
 
     .career {
-        display: flex;
-        flex-wrap: wrap;
-        align-self: flex-start;
+        text-align: left;
         padding-left: 10px;
     }
 
@@ -363,6 +361,12 @@ a {
         flex-wrap: wrap;
         flex-direction: row;
         padding-top: 50px;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     #social {
